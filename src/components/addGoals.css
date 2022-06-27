@@ -1,0 +1,18 @@
+.form-container {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+.valid {
+    border: 1px solid black;
+}
