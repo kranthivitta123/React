@@ -9,7 +9,6 @@ const AddGoal = (props) => {
 
   const formSubmit = (event) => {
     event.preventDefault();
-    console.log(addGoalRef.current.value);
     if (enteredValue.trim().length === 0) {
       setValidity(false);
       return;
