@@ -4,7 +4,8 @@ import "./App.css";
 // import Reduce from "./components/reducerPractice";
 // import SampleContext from "./store/sample-context";
 // import { useState } from "react";
-import Home from "./food-order/pages/Home";
+// import Home from "./food-order/pages/Home";
+import Main from "./routing-app/pages/main";
 
 // const Empty = () => {
 //   return <p>Inside portal</p>;
@@ -29,7 +30,8 @@ function App() {
     //     Change Context flag
     //   </button>
     // </div>
-    <Home/>
+    // <Home/>
+    <Main/>
   );
 }
 
