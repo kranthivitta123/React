@@ -1,11 +1,15 @@
 import "./App.css";
+//import Counter from "./redux-practice/components/Counter";
+import CounterLayout from "./redux-practice/pages/CounterLayout";
+import store from "./redux-practice/store";
+import { Provider } from "react-redux";
 // import GoalContainer from "./components/goalContainer";
 // import ReactDOM from "react-dom";
 // import Reduce from "./components/reducerPractice";
 // import SampleContext from "./store/sample-context";
 // import { useState } from "react";
 // import Home from "./food-order/pages/Home";
-import Main from "./routing-app/pages/main";
+//import Main from "./routing-app/pages/main";
 
 // const Empty = () => {
 //   return <p>Inside portal</p>;
@@ -31,7 +35,10 @@ function App() {
     //   </button>
     // </div>
     // <Home/>
-    <Main/>
+    // <Main/>
+    <Provider store={store}>
+      <CounterLayout />
+    </Provider>
   );
 }
 
