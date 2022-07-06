@@ -1,8 +1,10 @@
 import "./App.css";
 //import Counter from "./redux-practice/components/Counter";
-import CounterLayout from "./redux-practice/pages/CounterLayout";
+// import CounterLayout from "./redux-practice/pages/CounterLayout";
 import store from "./redux-practice/store";
 import { Provider } from "react-redux";
+import Wrapper from "./auth-practice/pages/Wrapper";
+// import AuthContextProvider from "./store/auth-context";
 // import GoalContainer from "./components/goalContainer";
 // import ReactDOM from "react-dom";
 // import Reduce from "./components/reducerPractice";
@@ -37,7 +39,8 @@ function App() {
     // <Home/>
     // <Main/>
     <Provider store={store}>
-      <CounterLayout />
+      {/* <CounterLayout /> */}
+      <Wrapper />
     </Provider>
   );
 }
